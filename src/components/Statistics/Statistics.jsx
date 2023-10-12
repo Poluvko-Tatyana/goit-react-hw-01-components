@@ -1,25 +1,18 @@
-export const Statistics = ({title}) => {
+import css from '../Statistics/Statistics.module.css';
+
+export const Statistics = ({title, stats}) => {
     return (
-        <section className="statistics">
+        <section className={css.statistics}>
         <h2 className="title">{title}</h2>
-      
-        <ul className="stat-list">
-          <li className="item">
-            <span className="label">.docx</span>
-            <span className="percentage">4%</span>
-          </li>
-          <li className="item">
-            <span className="label">.mp3</span>
-            <span className="percentage">14%</span>
-          </li>
-          <li className="item">
-            <span className="label">.pdf</span>
-            <span className="percentage">41%</span>
-          </li>
-          <li className="item">
-            <span className="label">.mp4</span>
-            <span className="percentage">12%</span>
-          </li>
+        <ul className={css.stat_list}>
+
+        {stats.map((stat) => {
+          return(<li className={css.item}>
+            <span className={css.label}>{stat.label}</span>
+            <span className={css.percentage}>{stat.percentage}</span>
+          </li>)
+          })
+            }
         </ul>
       </section>
     );
