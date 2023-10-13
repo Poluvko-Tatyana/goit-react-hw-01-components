@@ -6,7 +6,7 @@ import transactions from '../components/all-json/transactions';
 import { Profiler } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
-import { TransactionHistory } from './TransactionHistory/TransactionHistory.module';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 
 
