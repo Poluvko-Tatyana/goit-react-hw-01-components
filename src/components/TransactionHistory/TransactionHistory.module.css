@@ -1,3 +1,7 @@
 .transactionHistory{
-    background-color: aqua;
+    margin: 0 auto;
+    min-width: 400px;
+    background-color: gainsboro;
+    padding: 15px;
+    border-radius: 8px;
 }

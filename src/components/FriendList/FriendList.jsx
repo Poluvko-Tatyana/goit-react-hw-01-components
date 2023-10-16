@@ -12,5 +12,5 @@ export const FriendList = ({friends}) => {
         );
       })}
 </ul>
-    );
-  };
+    )
+  }
